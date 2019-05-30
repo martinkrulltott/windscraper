@@ -3,14 +3,14 @@ var router = express.Router();
 const cheerio = require("cheerio");
 const axios = require("axios");
 
+router.get('/', (req, res) => res.json({error: "No input parameter! Please provide the name of a wind spot in the URL, e.g. /lomma"}));
 router.get("/:spot", async (req, res, next) => {
   try {
+    let result = {};
     const response = await axios.get(
       "https://findwind.se/spot/" + req.params.spot
     );
     const $ = cheerio.load(response.data);
-
-    let result = {};
     
     const spot = $(".spotcard_header_center_1 a");
     if (spot) {
