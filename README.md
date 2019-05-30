@@ -1,7 +1,7 @@
 # Windscraper
 A NodeJS web scraper for Findwind.se
 
-Live example of the API can be found here https://glacial-hollows-51912.herokuapp.com/
+Live example of the API can be found here https://glacial-hollows-51912.herokuapp.com/lomma
 
 ## API values
 ```
