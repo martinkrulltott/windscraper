@@ -3,7 +3,6 @@ var router = express.Router();
 const cheerio = require("cheerio");
 const axios = require("axios");
 
-// lomma, borrby, kämpinge, lundåkra
 router.get("/:spot", async (req, res, next) => {
   try {
     const response = await axios.get(
@@ -28,7 +27,6 @@ router.get("/:spot", async (req, res, next) => {
     }
     res.json(result);
   } catch (e) {
-    //this will eventually be handled by your error handling middleware
     next(e);
   }
 });
