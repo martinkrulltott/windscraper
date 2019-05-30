@@ -11,6 +11,13 @@ router.get("/:spot", async (req, res, next) => {
     const $ = cheerio.load(response.data);
 
     let result = {};
+    
+    const spot = $(".spotcard_header_center_1 a");
+    if (spot) {
+      result.spot = $(spot).text();
+      // Note: To pick up incorrect spots (which return "En okänd spot"), this will be empty
+      // However, correct spots with spaces will also fail because of this
+    }
     const windspeed = $(".spotcard_main_center_table_2");
     if (windspeed) {
       result.windspeed = $(windspeed).text();
