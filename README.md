@@ -14,11 +14,11 @@ Live example of the API can be found here https://glacial-hollows-51912.herokuap
 
 ## Example data
 ```
-  "spot": "Lomma",
-  "windspeed": "8.9",
-  "gustspeed": "17.8",
-  "directiontext": "S",
-  "directiondegrees": "180"
+"spot": "Lomma",
+"windspeed": "8.9",
+"gustspeed": "17.8",
+"directiontext": "S",
+"directiondegrees": "180"
 ```
 
 ## Development
@@ -26,4 +26,12 @@ Live example of the API can be found here https://glacial-hollows-51912.herokuap
 Setup: npm install
 Dev with watch: npm run watch
 Run prod: npm start
+```
+
+## Built using
+```
+Node
+Express
+Cheerio
+Axios
 ```
