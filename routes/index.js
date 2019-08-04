@@ -33,6 +33,8 @@ router.get("/:spot", async (req, res, next) => {
     }
     res.json(result);
   } catch (e) {
+    console.log(e);
+    debugger;
     next(e);
   }
 });
