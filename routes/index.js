@@ -11,6 +11,7 @@ router.get("/:spot", async (req, res, next) => {
     result.link = sourceUrl;
     const response = await axios.get(sourceUrl);
     const $ = cheerio.load(response.data);
+    console.log(response.data);
     const spot = $(".spotcard_header_center_1 a");
     if (spot) {
       result.spot = $(spot).text();
