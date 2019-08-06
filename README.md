@@ -1,8 +1,6 @@
 # Windscraper
 A NodeJS web scraper for Findwind.se
 
-Live example of the API can be found here https://kitewindscraper.herokuapp.com/lomma
-
 ## API values
 ```
 "spot": Name of the spot
