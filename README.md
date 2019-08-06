@@ -1,5 +1,5 @@
 # Windscraper
-A NodeJS web scraper for Findwind.se
+A NodeJS module for the Findwind.se API
 
 ## API values
 ```
@@ -22,14 +22,18 @@ A NodeJS web scraper for Findwind.se
 ## Development
 ```
 Setup: npm install
-Dev with watch: npm run watch
+Dev: npm run serve
 Run prod: npm start
+If you're running a local instance of Windscraper:
+Create a .env file in the root folder with your API key
+Example: 
+USERNAME=your-username
+API-KEY=your-findwind-api-key
 ```
 
 ## Built using
 ```
 Node
 Express
-Cheerio
 Axios
 ```
