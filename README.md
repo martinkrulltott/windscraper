@@ -1,5 +1,6 @@
 # Windscraper
 A NodeJS module for the Findwind.se API
+Live example of the app can be found here https://kitewindscraper.herokuapp.com/20
 
 ## API values
 ```
